@@ -1,0 +1,52 @@
+
+.ratingOverlay {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    opacity: 0.9;
+}
+
+.rateBox {
+    width: 50px;
+    height: 50px;
+
+    background: url('chrome-extension://__MSG_@@extension_id__/images/rt_lg_bw.png') no-repeat;
+
+    text-align: center;
+    vertical-align: middle;
+    
+    line-height: 60px;
+
+    font-size: 150%;
+    font-weight: bold;
+    
+    float: right;
+}
+
+.fresh {
+   color: #eee;
+   background: url('chrome-extension://__MSG_@@extension_id__/images/rt_lg.png') no-repeat;
+   line-height: 65px;
+   background-position: 0px 0px;
+}
+
+.rotten {
+    color: #111;
+    line-height: 55px;
+    background-position: 0px -50px;
+}    
+
+.upright {
+    color: #111;
+    line-height: 65px;
+    background-position: 0px -150px;
+}
+
+.spilt {
+    color: #111;
+    line-height: 55px;
+    background-position: 0px -250px;
+}
+

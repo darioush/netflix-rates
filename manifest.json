@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+
+    "name": "Netflix-Rates",
+    "description": "This extension loads ratings from rotten tomatoes and displays them on Netflix in a way that's actually useful",
+    "version": "0.1",
+
+    "permissions": [
+        "http://www.netflix.com/",
+        "http://api.rottentomatoes.com/",
+        "storage"
+    ],
+
+    "content_scripts": [
+        {
+            "matches" : ["http://www.netflix.com/*"],
+            "css": [ "styles.css" ],
+            "js": ["jquery-1.11.0.min.js", "jquery.viewport.mini.js",
+                    "background.js"]
+        }
+    ],
+
+    "web_accessible_resources" : [ "images/*.png" ]
+}
